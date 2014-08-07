@@ -33,6 +33,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('default', ['clean','bower','bowerInstall','concat']);
 
+    
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-bower-install');
