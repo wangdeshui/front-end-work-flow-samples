@@ -1,13 +1,19 @@
 * Setup build.bat, the content is below
+
+		CMD /C npm install grunt-cli -g
+		CMD /C npm install
 		grunt
+		
+
 
 * add below into Pre-build event command line of project settings
-''' bash
-CD $(SolutionDir)buildtasks\
-CALL build.bat
-'''
 
-'''bash
-CD $(SolutionDir)buildtasks\
-CALL build.bat
-'''
+
+		
+		CD $(SolutionDir)buildtasks\
+		CALL build.bat
+		
+
+
+
+
