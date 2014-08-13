@@ -23,6 +23,14 @@ module.exports = function (grunt) {
             }
         },
 
+        uglify:
+        {
+        	build:{
+        		src:'../samples/app/scripts/all.js',
+        		dest: '../samples/app/scripts/all.min.js'
+        	}
+        },
+
         bowerInstall: {
             target: {
                 src:'../samples/app/index.html'
@@ -31,11 +39,12 @@ module.exports = function (grunt) {
 
     });
 
-    grunt.registerTask('default', ['clean','bower','bowerInstall','concat']);
+    grunt.registerTask('default', ['clean','bower','bowerInstall','concat','uglify']);
 
     
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-bower-install');
     grunt.loadNpmTasks('grunt-bower-task');
 };

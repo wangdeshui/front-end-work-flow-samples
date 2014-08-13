@@ -1,6 +1,6 @@
 {
   "name": "samples",
-  "version": "0.0.1",  
+  "version": "0.0.1",
   "authors": [
     "Jack Wang <wangds@shinetechchina.com>"
   ],
@@ -16,5 +16,8 @@
   ],
   "dependencies": {
     "angular": "~1.2.21"
+  },
+  "devDependencies": {
+   
   }
 }
